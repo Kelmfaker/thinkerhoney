@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thinker Honey</title>
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="/public/static/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 
@@ -185,6 +185,26 @@ font-family: "Tajawal", sans-serif;
   color:  #482f1e;
 }
 
+.buttons-container {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #1e3f66;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 8px;
+}
+
+button:hover {
+    background-color: #1e3f66;
+}
+
+
 </style>
 
 
@@ -193,7 +213,7 @@ font-family: "Tajawal", sans-serif;
 
     <header>
         <div class="logo">Thinker Honey</div>
-  <div class="logo"> <img src="./static/img/logo2.png" class="logo1"></div>
+  <div class="logo"> <img src="public/static/img/logo2.png" class="logo1"></div>
       <div class="navigation">
 
 
@@ -206,9 +226,13 @@ font-family: "Tajawal", sans-serif;
       <a href="#who">?Thinker Honey</a>
       <a href="#contact">تواصل معنا</a>
 
-
-       
     </div>
+
+    <div class="buttons-container">
+      <button id="signup-btn" onclick="redirectToSignup()">تسجيل</button>
+      <button id="login-btn" onclick="redirectToLogin()">دخول</button>
+    </div>
+
    <div class="cart-icon">
       <a href="cart.html" title="سلة المشتريات">
         <i class="fas fa-shopping-cart"></i>
@@ -259,8 +283,8 @@ font-family: "Tajawal", sans-serif;
     <section class="content">
 
       <div class="main-wrapper">
-  <img src="./static/img/logo1.png" alt="يمين" class="side-img right">
-  <img src="./static/img/logo2.png" alt="يسار" class="side-img left">
+  <img src="/public/static/img/logo1.png" alt="يمين" class="side-img right">
+  <img src="/public/static/img/logo2.png" alt="يسار" class="side-img left">
 
   <div class="wrapper-content">
     <h2>Thinker Honey</h2>
@@ -1003,6 +1027,17 @@ document.addEventListener("click", function (event) {
       closeModal();
     }
   }
+
+ // Redirect to the signup page
+    function redirectToSignup() {
+      window.location.href = "/public/authentication/signup.html";
+    }
+
+    // Redirect to the login page
+    function redirectToLogin() {
+      window.location.href = "/public/authentication/login.html";
+    }
+
 
 </script>
 

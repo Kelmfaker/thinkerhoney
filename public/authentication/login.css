@@ -1,0 +1,126 @@
+
+
+
+.container{
+
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(/frontend/src/img/tourists-go-up-hill-sunrise.jpg);
+    background-color: #482f1e;
+    color: #ddd;
+    border-radius: 1%;
+}
+
+.content{
+direction: rtl;
+  padding: 50px;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+    border-radius: 1%;
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  border: none;
+ 
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.clearfix{
+    display: flex;
+    flex-direction: row;
+justify-content:space-between;
+margin: 20px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:rgb(220, 220, 245);
+  color:rgb(61, 4, 4);
+  text-decoration:solid;
+  padding: 10px 10px;
+  margin: 5px 20px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.9;
+  border-radius: 5%;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 10px 10px;
+  background-color:rgb(223, 223, 250);
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 30%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 10px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.psw{
+
+  padding: 20px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+
+
+
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 20%;
+    height: 20%;
+    border-radius:10%;
+  }
+  
+
+  

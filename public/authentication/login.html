@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Link to the external CSS file -->
+     <link rel="stylesheet" href="/public/authentication/login.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="imgcontainer">
+        <img src="../../public/static/img/logo1.png" alt="Avatar" class="avatar">
+      </div>
+    
+      <div class="container">
+        <form id="login-form">
+        <div class="content">
+        <label for="email"><b>البريد</b></label>
+        <input id="email" type="email" placeholder="ادخل بريدك" name="email" required> <br>
+    
+        <label for="psw"><b>كلمة المرور</b></label>
+        <input id="password" type="password" placeholder="ادخل كلمة المرور" name="psw" required>
+        <div class="clearfix">
+        <button type="submit" class="button">دخول</button>
+        </form>
+
+        <button type="button" class="cancelbtn">الغاء</button>
+</div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> تذكرني
+        </label>
+    
+    
+        <span class="psw"><a href="/public/authentication/signup.html" style="color: bisque;">تسجيل</a></span>
+   <!--     <span class="psw">Forgot <a href="#" style="color: bisque;">password?</a></span>  -->
+  </div>
+      </div>
+
+      <script src="/public/authentication/login.js"></script>
+</body>
+</html>
