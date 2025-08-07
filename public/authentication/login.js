@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Redirect based on role
       if (data.role === "admin") {
-        window.location.href = "/public/confirm.html";
+        window.location.href = "/public/adminboard/adminboard.html";
       } else if (data.role === "client") {
         window.location.href = "/public/cart.html";
       } else {

@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  color: #1e3f66;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 100%;
+  background-color: #1e3f66;
+  padding: 20px 10px;
+  border-right: 3px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-name {
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.member-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid aliceblue;
+}
+
+.nav-links {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: aliceblue;
+  background-color: #1e3f66;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #005555;
+  color: aliceblue;
+}
+
+.Welcome-div {
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 190px;
+  border: solid;
+  width: 100%;
+  z-index: 1;
+}
+
+body header h1 {
+  padding: 0;
+  margin-top: 10px;
+  color: #1E3F66;
+  position: absolute;
+  left: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.latest-requests-div {
+  width: 90%;
+  height: 100%;
+  /* Adjust height for your layout */
+  position: fixed;
+  top: 73px;
+  left: 193px;
+  padding-left: 7px;
+  border-radius: 5%;
+
+}
+
+.latest-requests {
+  background-color: #BCD2E8;
+  width: 95%;
+  height: 550px;
+  /* Set a fixed height for the scrollable area */
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid #2E5984;
+  border-radius: 5%;
+  gap: 20px;
+  padding: 10px;
+}
+
+.request {
+  background-color: #E6EDF5;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5%;
+  text-align: center;
+  font-weight: 800;
+  border: solid #9CB8D9;
+  font-size: 20px;
+}
+
+.request:first-child {
+  margin-top: 0;
+  top: 10px;
+}
+
+.nav-link:active {
+  text-decoration: underline;
+  color: burlywood;
+}
+
+.collect-btn,
+.delete-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.collect-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.collect-btn:hover {
+  background-color: #45A049;
+}
+
+.delete-btn {
+  background-color: #FF4C4C;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #FF0000;
+}
+
+.logoutBtn {
+  background-color: aliceblue;
+  color: #2E5984;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  position: fixed;
+  bottom: 100px;
+  left:60px;
+  z-index: 1000;
+  height: 40px;
+  width: 70px;
+  font-size: 16px;
+}

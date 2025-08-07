@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="memberboard.css" />
+  <title>Member Dashboard</title>
+</head>
+
+<body>
+  <header class="welcome-header">
+    <div class="welcome-div">
+      <h1><span id="member-name-display">Member Name</span>!</h1>
+    </div>
+  </header>
+
+  <div class="latest-requests-div">
+    <h3>*Here are the latest requests that need to be reviewed and collected*</h3>
+    <div class="latest-requests">
+      <!-- Requests will be dynamically populated here -->
+    </div>
+  </div>
+
+  <div class="navbar">
+    <nav id="navbar">
+      <header class="navbar-header">
+        <span class="member-name" id="navbar-member-name">Hi, User</span>
+        <div class="member-image">
+          <img id="member-image" src="default-image.jpg" alt="Profile Image">
+        </div>
+      </header>
+      <div class="nav-links">
+        <a href="./neederslist.html" class="nav-link">Needers List</a>
+        <a href="./requests.html" class="nav-link">Requests</a>
+        <a href="./donationsitems.html" class="nav-link">Donation Items</a>
+        <a href="./archives.html" class="nav-link">Archives</a>
+        <a href="./statistics.html" class="nav-link">Statistics</a>
+        <a href="./profilesettings.html" class="nav-link">Profile Settings</a>
+      </div>
+      <div class="logout-button">
+        <button type="button" id="logoutBtn" class="logoutBtn">Logout</button>
+      </div>
+    </nav>
+  </div>
+
+  <script src="memberboard.js"></script> <!-- Ensure this matches your JavaScript file name -->
+</body>
+
+</html>
