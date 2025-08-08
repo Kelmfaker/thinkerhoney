@@ -7,6 +7,7 @@ const path = require("path");
 const authRouter = require("./routes/auth");
 const userRoutes = require("./routes/user.routes");
 const categoryRoutes = require('./routes/category.routes');
+const productRoutes = require('./routes/productRoutes');
 
 
 
@@ -29,6 +30,7 @@ app.use("/auth", authRouter);
 
 app.use("/api/users", userRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/products', productRoutes);
 
 
 
