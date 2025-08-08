@@ -30,50 +30,6 @@
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("[data-page]");
-  const container = document.getElementById("page-container"); // مكان المحتوى المتغير
-
-  links.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const page = link.getAttribute("data-page");
-
-      fetch(page)
-        .then(res => res.text())
-        .then(html => {
-          container.innerHTML = html;
-        })
-        .catch(err => {
-          container.innerHTML = "<p>تعذر تحميل الصفحة</p>";
-          console.error(err);
-        });
-    });
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("[data-page]");
-  const container = document.getElementById("page-container"); // مكان المحتوى المتغير
-
-  links.forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      const page = link.getAttribute("data-page");
-
-      fetch(page)
-        .then(res => res.text())
-        .then(html => {
-          container.innerHTML = html;
-        })
-        .catch(err => {
-          container.innerHTML = "<p>تعذر تحميل الصفحة</p>";
-          console.error(err);
-        });
-    });
-  });
-});
-
 
 
 
