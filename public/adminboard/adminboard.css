@@ -14,16 +14,17 @@ html {
 body {
   font-family: Arial, sans-serif;
   background-color: aliceblue;
-  color: #1e3f66;
+  color: #482f1e;
+  direction: rtl;
 }
 
 .navbar {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 190px;
   height: 100%;
-  background-color: #1e3f66;
+  background-color: #482f1e;
   padding: 20px 10px;
   border-right: 3px solid gray;
   display: flex;
@@ -59,8 +60,8 @@ body {
 .nav-link {
   display: block;
   text-decoration: none;
-  color: aliceblue;
-  background-color: #1e3f66;
+  color: #ede2cf;
+  background-color: #8f6945;
   font-weight: bold;
   text-align: center;
   margin: 10px 0;
@@ -70,8 +71,8 @@ body {
 }
 
 .nav-link:hover {
-  background-color: #005555;
-  color: aliceblue;
+  background-color: #e2c79b;
+  color: #482f1e;
 }
 
 .Welcome-div {
@@ -79,7 +80,7 @@ body {
   top: 0;
   margin: 0;
   padding: 0;
-  left: 190px;
+  right: 190px;
   border: solid;
   width: 100%;
   z-index: 1;
@@ -88,26 +89,26 @@ body {
 body header h1 {
   padding: 0;
   margin-top: 10px;
-  color: #1E3F66;
+  color: #482f1e;
   position: absolute;
-  left: 200px;
+  right: 200px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.latest-requests-div {
+.content_div {
   width: 90%;
   height: 100%;
   /* Adjust height for your layout */
   position: fixed;
   top: 73px;
-  left: 193px;
-  padding-left: 7px;
+  right: 193px;
+  padding-right: 7px;
   border-radius: 5%;
 
 }
 
-.latest-requests {
-  background-color: #BCD2E8;
+.items-page {
+  background-color: #e2c79b;
   width: 95%;
   height: 550px;
   /* Set a fixed height for the scrollable area */
@@ -182,7 +183,7 @@ body header h1 {
   font-weight: bold;
   position: fixed;
   bottom: 100px;
-  left:60px;
+  right:60px;
   z-index: 1000;
   height: 40px;
   width: 70px;

@@ -1,4 +1,6 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema; // هذا هو السطر الذي نسيته
+
 
 const productSchema = new mongoose.Schema({
   name: {

@@ -26,9 +26,6 @@ app.use("/auth", authRouter);
 
 
 
-
-
-
 // Default route to test server status
 app.get("/", (request, response) => {
   response.sendFile(path.join(__dirname, "/public", "index.html"));

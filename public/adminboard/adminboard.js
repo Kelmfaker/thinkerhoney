@@ -1,3 +1,82 @@
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const contentDiv = document.getElementById('content');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const page = this.getAttribute('data-page');
+        fetch(`/public/adminboard/pages/${page}`) // عدّل المسار حسب مكان ملفاتك
+          .then(response => response.text())
+          .then(html => {
+            contentDiv.innerHTML = html;
+          })
+          .catch(err => {
+            contentDiv.innerHTML = "<p>حدث خطأ أثناء تحميل الصفحة</p>";
+          });
+      });
+    });
+
+    // تحميل صفحة افتراضية أول مرة
+    const defaultPage = navLinks[0].getAttribute('data-page');
+    fetch(`/public/adminboard/pages/${defaultPage}`)
+      .then(response => response.text())
+      .then(html => {
+        contentDiv.innerHTML = html;
+      });
+  });
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("[data-page]");
+  const container = document.getElementById("page-container"); // مكان المحتوى المتغير
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const page = link.getAttribute("data-page");
+
+      fetch(page)
+        .then(res => res.text())
+        .then(html => {
+          container.innerHTML = html;
+        })
+        .catch(err => {
+          container.innerHTML = "<p>تعذر تحميل الصفحة</p>";
+          console.error(err);
+        });
+    });
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("[data-page]");
+  const container = document.getElementById("page-container"); // مكان المحتوى المتغير
+
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const page = link.getAttribute("data-page");
+
+      fetch(page)
+        .then(res => res.text())
+        .then(html => {
+          container.innerHTML = html;
+        })
+        .catch(err => {
+          container.innerHTML = "<p>تعذر تحميل الصفحة</p>";
+          console.error(err);
+        });
+    });
+  });
+});
+
+
+
+
 document.addEventListener("DOMContentLoaded", async () => {
   const API_BASE_URL = "http://localhost:5000";
   const token = localStorage.getItem("token");
