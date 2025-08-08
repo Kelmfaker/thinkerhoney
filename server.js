@@ -5,6 +5,8 @@ const connectDB = require("./config/database");
 const path = require("path");
 
 const authRouter = require("./routes/auth");
+const userRoutes = require("./routes/user.routes");
+
 
 
 dotenv.config();
@@ -23,6 +25,8 @@ app.use("/static", express.static(path.join(__dirname, "static")));
 
 // Authentication Routes signup and login
 app.use("/auth", authRouter);
+
+app.use("/api/users", userRoutes);
 
 
 
