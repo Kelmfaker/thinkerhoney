@@ -6,6 +6,7 @@ const path = require("path");
 
 const authRouter = require("./routes/auth");
 const userRoutes = require("./routes/user.routes");
+const categoryRoutes = require('./routes/category.routes');
 
 
 
@@ -27,6 +28,8 @@ app.use("/static", express.static(path.join(__dirname, "static")));
 app.use("/auth", authRouter);
 
 app.use("/api/users", userRoutes);
+app.use('/api/categories', categoryRoutes);
+
 
 
 
